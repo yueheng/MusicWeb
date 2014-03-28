@@ -1,0 +1,37 @@
+<HTML 
+  xmlns:fb="https://www.facebook.com/2008/fbml">
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<TITLE>Discography Search</TITLE>
+<SCRIPT type = "text/javascript" language = "Javascript" src = "HW8.js"></SCRIPT>
+<SCRIPT type = "text/javascript" language = "JavaScript" src = "fb.js"></SCRIPT>
+<STYLE>
+#tableText {
+  text-align: center;
+}
+#updateArea {
+  text-align: center;
+}
+H3 {color: #184FF4}
+.searchTitle {color: #184FF4}
+.searchType {color: #184FF4}
+</STYLE>
+</HEAD>
+
+<BODY>
+
+<FORM onsubmit="return checkEmpty()" METHOD="GET"><CENTER><TABLE CELLSPACING=5>
+<CAPTION><H3>Discography Search</H3></CAPTION>
+<TR><TD width=25% class="searchTitle">Search:</TD><TD><INPUT TYPE="text" NAME="title" SIZE=30 id="searchTitle" value=""></TD></TR>
+<TR><TD class="searchType">Type:</TD>
+<TD><SELECT NAME="type" id="searchType">
+<OPTION SELECTED VALUE="artists">Artists</OPTION>
+<OPTION VALUE="albums">Albums</OPTION>
+<OPTION VALUE="songs">Songs</OPTION></SELECT></TD></TR>
+<TR><TD colspan=2 align=center><INPUT TYPE="submit" VALUE="Search" NAME="submit" id="toSubmit"></TD></TR>
+</TABLE></CENTER></FORM>
+
+<DIV id="updateArea"></DIV>
+<div id="fb-root"></div>
+</BODY>
+</HTML>
